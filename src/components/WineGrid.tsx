@@ -115,7 +115,7 @@ const WineGrid = () => {
                   </p>
                 </div>
 
-                <p className="text-sm mb-4 line-clamp-2 text-black">
+                <p className="text-sm mb-4 line-clamp-2 text-black h-[40px]">
                   {wine.description}
                 </p>
 
@@ -146,7 +146,8 @@ const WineGrid = () => {
         <div className="text-center mt-12">
           <Button
             size="lg"
-            className="px-8 bg-[#89764b] hover:bg-[#89764b] text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02]"
+            variant="ghost"
+            className="px-8 bg-[#89764b] hover:bg-[#89764b] text-white transition-all duration-300 transform hover:scale-[1.02]"
           >
             Ver Todos os Vinhos
           </Button>

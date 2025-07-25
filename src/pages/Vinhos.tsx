@@ -76,42 +76,73 @@ const Vinhos = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="py-16 lg:py-24 bg-gradient-wine">
+        <section className="py-16 lg:py-24 bg-[#dad6d6]">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="wine-heading text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-black text-4xl lg:text-5xl font-bold mb-6">
               Nossos Vinhos Premiados
             </h1>
-            <p className="wine-text text-lg max-w-3xl mx-auto">
-              Descubra nossa coleção exclusiva de vinhos, cada um cuidadosamente 
+            <p className="text-black text-lg max-w-3xl mx-auto">
+              Descubra nossa coleção exclusiva de vinhos, cada um cuidadosamente
               elaborado para oferecer uma experiência sensorial única.
             </p>
           </div>
         </section>
 
         {/* Filters and Search */}
-        <section className="py-8 border-b border-border">
+        <section className="py-8 border-b border-white/20 bg-black">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row gap-4 justify-between items-center">
+              {/* Filtros */}
               <div className="flex gap-2 flex-wrap">
-                <Button variant="wine" size="sm">Todos</Button>
-                <Button variant="outline" size="sm">Tintos</Button>
-                <Button variant="outline" size="sm">Brancos</Button>
-                <Button variant="outline" size="sm">Rosés</Button>
-                <Button variant="outline" size="sm">Especiais</Button>
+                <Button
+                  size="sm"
+                  className="bg-black text-white border border-white/20 hover:bg-black active:scale-95"
+                >
+                  Todos
+                </Button>
+                <Button
+                  size="sm"
+                  className="bg-black text-white border border-white/20 hover:bg-black active:scale-95"
+                >
+                  Tintos
+                </Button>
+                <Button
+                  size="sm"
+                  className="bg-black text-white border border-white/20 hover:bg-black active:scale-95"
+                >
+                  Brancos
+                </Button>
+                <Button
+                  size="sm"
+                  className="bg-black text-white border border-white/20 hover:bg-black active:scale-95"
+                >
+                  Rosés
+                </Button>
+                <Button
+                  size="sm"
+                  className="bg-black text-white border border-white/20 hover:bg-black active:scale-95"
+                >
+                  Especiais
+                </Button>
               </div>
-              
+
+              {/* Busca */}
               <div className="flex gap-2 w-full lg:w-auto">
                 <div className="relative flex-1 lg:w-64">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                  <Input 
-                    placeholder="Buscar vinhos..." 
-                    className="pl-10"
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-white/70" />
+                  <Input
+                    placeholder="Buscar vinhos..."
+                    className="pl-10 bg-black text-white border-white/20 placeholder:text-white/50 focus-visible:ring-white/30"
                   />
                 </div>
-                <Button variant="outline" size="icon">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="bg-black text-white border-white/20 hover:bg-black hover:text-white"
+                >
                   <Filter className="h-4 w-4" />
                 </Button>
               </div>
@@ -120,29 +151,29 @@ const Vinhos = () => {
         </section>
 
         {/* Wine Grid */}
-        <section className="py-16">
+        <section className="py-16 bg-[#dad6d6]">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
               {wines.map((wine) => (
-                <Card 
-                  key={wine.id} 
+                <Card
+                  key={wine.id}
                   className="group overflow-hidden hover:shadow-elegant transition-wine border-border/50"
                 >
                   <div className="relative overflow-hidden">
-                    <img 
-                      src={wine.image} 
+                    <img
+                      src={wine.image}
                       alt={wine.name}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-wine"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition"
                     />
-                    
+
                     {wine.isOnSale && (
                       <Badge className="absolute top-3 left-3 bg-accent text-accent-foreground">
                         Oferta
                       </Badge>
                     )}
 
-                    <Badge 
-                      variant="secondary" 
+                    <Badge
+                      variant="secondary"
                       className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm"
                     >
                       {wine.category}
@@ -186,8 +217,8 @@ const Vinhos = () => {
                       </div>
                     </div>
 
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-wine"
                     >
                       Adicionar ao Carrinho

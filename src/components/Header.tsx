@@ -84,7 +84,7 @@ const Header = () => {
 
         {/* Menu Mobile */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-gray-800/95 backdrop-blur-sm border-t border-gray-600">
+          <div className="lg:hidden bg-black/95 backdrop-blur-sm border-t border-black">
             <nav className="flex flex-col divide-y divide-gray-600">
               {navLinks.map((link) => (
                 <Link
