@@ -13,7 +13,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="wine-heading text-2xl lg:text-3xl font-bold">
-              Vinícola Mana
+              Vinícola Amana
             </div>
           </Link>
 
