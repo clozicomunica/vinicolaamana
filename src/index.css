@@ -6,6 +6,38 @@
 All colors MUST be HSL.
 */
 
+/* Reset básico sem causar scroll lateral */
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Scroll vertical suave */
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+/* Corrige elementos que podem causar overflow */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Opcional: esconda overflow horizontal apenas em containers que quebram o layout */
+.layout-wrapper,
+.container {
+  overflow-x: hidden;
+}
+
 @layer base {
   :root {
     /* Wine-inspired color palette */
@@ -47,12 +79,12 @@ All colors MUST be HSL.
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
     --gradient-wine: linear-gradient(180deg, hsl(var(--primary) / 0.1) 0%, transparent 100%);
     --gradient-gold: linear-gradient(45deg, hsl(var(--accent)) 0%, hsl(45 95% 75%) 100%);
-    
+
     /* Elegant shadows */
     --shadow-wine: 0 8px 32px hsl(var(--primary) / 0.2);
     --shadow-gold: 0 4px 20px hsl(var(--accent) / 0.3);
     --shadow-elegant: 0 12px 40px hsl(var(--foreground) / 0.1);
-    
+
     /* Animations */
     --transition-wine: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-smooth: all 0.3s ease-in-out;
@@ -97,6 +129,7 @@ All colors MUST be HSL.
     --border: 25 15% 20%;
     --input: 25 15% 18%;
     --ring: 355 55% 45%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -114,9 +147,9 @@ All colors MUST be HSL.
   }
 
   body {
-  @apply bg-background text-foreground font-light;
-  font-family: 'Oswald', -apple-system, sans-serif;
-}
+    @apply bg-background text-foreground font-light;
+    font-family: 'Oswald', -apple-system, sans-serif;
+  }
 
   /* Wine typography */
   .wine-heading {

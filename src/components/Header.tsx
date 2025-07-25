@@ -24,7 +24,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`sticky top-0 z-50 bg-gray-700 border-b border-gray-600 transition-all duration-300 ease-in-out ${isScrolled ? 'py-2 bg-gray-700/90 backdrop-blur-sm' : 'py-3'}`}>
+    <header className={`sticky top-0 z-50 bg-black border-b border-black transition-all duration-300 ease-in-out ${isScrolled ? 'py-2 bg-black/80 backdrop-blur-sm' : 'py-3'}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-14">
           {/* Logo com transição suave */}
@@ -45,7 +45,7 @@ const Header = () => {
                 className="relative text-gray-100 hover:text-white font-medium px-2 py-1 group transition-colors duration-200"
               >
                 {link.name}
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-amber-400 w-0 group-hover:w-[calc(100%-8px)] transition-all duration-300" />
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-white w-0 group-hover:w-[calc(100%-8px)] transition-all duration-300" />
               </Link>
             ))}
           </nav>
@@ -58,7 +58,7 @@ const Header = () => {
               className="text-gray-100 hover:text-white hover:bg-gray-600/50 relative transition-colors"
             >
               <ShoppingCart className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 bg-amber-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center shadow-sm">
+              <span className="absolute -top-1 -right-1 bg-[#9a3324] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center shadow-sm">
                 0
               </span>
             </Button>
