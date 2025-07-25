@@ -14,12 +14,12 @@ const Footer = () => {
               Receba Novidades Exclusivas
             </h3>
             <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-              Seja o primeiro a saber sobre novos lançamentos, eventos especiais
+              Seja o primeiro a saber sobre novos lançamentos, eventos especiais 
               e ofertas exclusivas da Vinícola Mana.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Input
-                type="email"
+              <Input 
+                type="email" 
                 placeholder="Seu melhor e-mail"
                 className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
               />
@@ -37,11 +37,11 @@ const Footer = () => {
             <div className="mb-6">
               <h2 className="text-2xl font-bold mb-4">Vinícola Mana</h2>
               <p className="text-primary-foreground/80 leading-relaxed max-w-md">
-                Três gerações dedicadas à arte de produzir vinhos únicos que
+                Três gerações dedicadas à arte de produzir vinhos únicos que 
                 expressam a essência de nossa terra e tradição familiar.
               </p>
             </div>
-
+            
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-white" />
@@ -82,40 +82,40 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-gray-400">Navegação</h3>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/vinhos"
+                <Link 
+                  to="/vinhos" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Nossos Vinhos
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/sobre"
+                <Link 
+                  to="/sobre" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Nossa História
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/experiencias"
+                <Link 
+                  to="/experiencias" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Experiências
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/clube"
+                <Link 
+                  to="/clube" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Clube do Vinho
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contato"
+                <Link 
+                  to="/contato" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Contato
@@ -129,40 +129,40 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-gray-400">Categorias</h3>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/vinhos/tintos"
+                <Link 
+                  to="/vinhos/tintos" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Vinhos Tintos
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/vinhos/brancos"
+                <Link 
+                  to="/vinhos/brancos" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Vinhos Brancos
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/vinhos/roses"
+                <Link 
+                  to="/vinhos/roses" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Vinhos Rosés
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/vinhos/especiais"
+                <Link 
+                  to="/vinhos/especiais" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Edições Especiais
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/promocoes"
+                <Link 
+                  to="/promocoes" 
                   className="text-primary-foreground/80 hover:text-white transition-wine"
                 >
                   Promoções
@@ -172,39 +172,59 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="py-6 border-t border-primary-foreground/20">
-          <div className="flex flex-col items-center gap-2"> {/* Alterado para flex-col e items-center */}
-            <div className="flex gap-6 text-sm">
-              <Link
-                to="/privacidade"
-                className="text-primary-foreground/60 hover:text-white transition-wine"
-              >
-                Política de Privacidade
-              </Link>
-              <Link
-                to="/termos"
-                className="text-primary-foreground/60 hover:text-white transition-wine"
-              >
-                Termos de Uso
-              </Link>
-            </div>
+      {/* Bottom Bar */}
+<div className="py-6 border-t border-gray-300">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+    {/* Direitos autorais - Esquerda */}
+    <p className="text-sm text-gray-600">
+      © {new Date().getFullYear()} Vinícola Amana. Todos os direitos reservados.
+    </p>
 
-            {/* Linha de créditos - Centralizada */}
-            <div className="flex justify-center items-center gap-1 text-xs text-primary-foreground/40 hover:text-primary-foreground/60 transition-wine">
-              <span>Desenvolvido com</span>
-              <Heart className="h-3 w-3 fill-current" />
-              <span>por</span>
-              <Link
-                to="https://clozicomunica.com"
-                target="_blank"
-                className="font-medium hover:text-white"
-              >
-                Clozi Comunica
-              </Link>
-            </div>
-          </div>
-        </div>
+    {/* Créditos - Centro (apenas em desktop) */}
+    <div className="hidden md:flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 transition-colors">
+      <span>Desenvolvido com</span>
+      <Heart className="h-3 w-3 fill-current" />
+      <span>por</span>
+      <Link 
+        to="https://clozicomunica.com" 
+        target="_blank"
+        className="font-medium hover:text-[#9a3324]"
+      >
+        Clozi Comunica
+      </Link>
+    </div>
+
+    {/* Links - Direita */}
+    <div className="flex gap-6">
+      <Link 
+        to="/privacidade" 
+        className="text-sm text-gray-600 hover:text-[#9a3324] transition-colors"
+      >
+        Política de Privacidade
+      </Link>
+      <Link 
+        to="/termos" 
+        className="text-sm text-gray-600 hover:text-[#9a3324] transition-colors"
+      >
+        Termos de Uso
+      </Link>
+    </div>
+
+    {/* Créditos - Mobile (centralizado abaixo) */}
+    <div className="md:hidden flex items-center gap-1 text-sm text-gray-500 mt-2">
+      <span>Desenvolvido com</span>
+      <Heart className="h-3 w-3 fill-current" />
+      <span>por</span>
+      <Link 
+        to="https://clozicomunica.com" 
+        target="_blank"
+        className="font-medium hover:text-[#9a3324]"
+      >
+        Clozi Comunica
+      </Link>
+    </div>
+  </div>
+</div>
       </div>
     </footer>
   );
