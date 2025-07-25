@@ -62,8 +62,8 @@ const AboutSection = () => {
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                          <feature.icon className="h-6 w-6 text-black" />
+                        <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center">
+                          <feature.icon className="h-6 w-6 text-white" />
                         </div>
                       </div>
                       <div>
@@ -83,7 +83,7 @@ const AboutSection = () => {
             <div className="flex gap-4 w-full">
               <Button 
                 size="lg"
-                className="bg-[#89764b] hover:bg-[#7a2a1d] text-white w-full sm:w-auto"
+                className="bg-[#89764b] hover:bg-[#89764b] text-white w-full sm:w-auto"
               >
                 Nossa História Completa
               </Button>

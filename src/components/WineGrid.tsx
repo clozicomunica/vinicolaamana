@@ -93,12 +93,12 @@ const WineGrid = () => {
 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-wine flex items-center justify-center gap-2">
-                  <Button variant="elegant" size="sm" className="bg-white/90 text-[#9a3324]">
+                  <Button variant="elegant" size="sm" className="bg-black text-white">
                     <Eye className="h-4 w-4" />
                   </Button>
                   <Button 
                     size="sm"
-                    className="bg-[#9a3324] hover:bg-[#7a2a1d] text-white"
+                    className="bg-black hover:bg-black text-white"
                   >
                     <ShoppingCart className="h-4 w-4" />
                   </Button>
@@ -133,7 +133,7 @@ const WineGrid = () => {
                 </div>
 
                 <Button
-                  className="w-full mt-4 bg-[#89764b] hover:bg-[#89764b] text-white border-transparent hover:border-transparent"
+                  className="w-full mt-4 bg-[#89764b] hover:bg-[#89764b] text-white border-transparent shadow-none"
                 >
                   Adicionar ao Carrinho
                 </Button>
@@ -147,7 +147,7 @@ const WineGrid = () => {
           <Button
             size="lg"
             variant="ghost"
-            className="px-8 bg-[#89764b] hover:bg-[#89764b] text-white transition-all duration-300 transform hover:scale-[1.02]"
+            className="px-8 bg-[#89764b] hover:bg-[#89764b] text-white transition-all duration-300 transform hover:scale-[1.02] shadow-none"
           >
             Ver Todos os Vinhos
           </Button>
