@@ -79,18 +79,18 @@ const Vinhos = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="py-16 lg:py-24 bg-[#dad6d6]">
+        <section className="py-16 lg:py-24 bg-black">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-black text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6">
               Nossos Vinhos Premiados
             </h1>
-            <p className="text-black text-lg max-w-3xl mx-auto">
+            <p className="text-white text-lg max-w-3xl mx-auto">
               Descubra nossa coleção exclusiva de vinhos, cada um cuidadosamente
               elaborado para oferecer uma experiência sensorial única.
             </p>
           </div>
         </section>
-
+<div className="h-px bg-white/20 w-full"></div>
         {/* Filters and Search */}
         <section className="py-8 border-b border-white/20 bg-black">
           <div className="container mx-auto px-4">
