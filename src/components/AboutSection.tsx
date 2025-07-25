@@ -28,24 +28,24 @@ const features = [
 
 const AboutSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-wine">
+    <section className="py-16 lg:py-24 bg-[#9c9c9c]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="wine-heading text-3xl lg:text-4xl font-bold mb-6">
+              <h2 className="text-white text-3xl lg:text-4xl font-bold mb-6">
                 Nossa História de
-                <span className="gold-accent block">Paixão e Tradição</span>
+                <span className="text-gray-600 block">Paixão e Tradição</span>
               </h2>
               
               <div className="space-y-4">
-                <p className="wine-text text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                   Desde 1952, a família Mana cultiva as melhores uvas em nosso terroir único, 
                   criando vinhos que expressam a essência de nossa terra e tradição.
                 </p>
                 
-                <p className="wine-text leading-relaxed">
+                <p className="text-white leading-relaxed">
                   Nossa vinícola combina métodos tradicionais com tecnologia moderna, 
                   garantindo que cada garrafa carregue a assinatura inconfundível da qualidade Mana.
                 </p>

@@ -114,9 +114,9 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-light;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  }
+  @apply bg-background text-foreground font-light;
+  font-family: 'Oswald', -apple-system, sans-serif;
+}
 
   /* Wine typography */
   .wine-heading {

@@ -51,14 +51,14 @@ const wines = [
 
 const WineGrid = () => {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-16 lg:py-24 bg-[#9c9c9c]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="wine-heading text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-white text-3xl lg:text-4xl font-bold mb-4">
             Nossos Vinhos Premiados
           </h2>
-          <p className="wine-text text-lg max-w-2xl mx-auto">
+          <p className="text-white text-lg max-w-2xl mx-auto">
             Cada garrafa conta uma história única, criada com paixão e dedicação 
             por três gerações de vinicultores.
           </p>
