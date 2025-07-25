@@ -5,7 +5,7 @@ import { ShoppingCart, Eye } from "lucide-react";
 import wineCollection from "@/assets/wine-collection.jpg";
 
 const wines = [
-  {
+   {
     id: 1,
     name: "Mana Reserva Cabernet Sauvignon",
     vintage: "2020",
@@ -59,7 +59,7 @@ const WineGrid = () => {
             Nossos Vinhos Premiados
           </h2>
           <p className="text-white text-lg max-w-2xl mx-auto">
-            Cada garrafa conta uma história única, criada com paixão e dedicação 
+            Cada garrafa conta uma história única, criada com paixão e dedicação
             por três gerações de vinicultores.
           </p>
         </div>
@@ -67,25 +67,25 @@ const WineGrid = () => {
         {/* Wine Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {wines.map((wine) => (
-            <Card 
-              key={wine.id} 
+            <Card
+              key={wine.id}
               className="group overflow-hidden hover:shadow-elegant transition-wine border-border/50"
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={wine.image} 
+                <img
+                  src={wine.image}
                   alt={wine.name}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-wine"
                 />
-                
+
                 {wine.isOnSale && (
-                  <Badge className="absolute top-3 left-3 bg-accent text-accent-foreground">
+                  <Badge className="absolute top-3 left-3 bg-[#9c9c9c] text-white">
                     Oferta
                   </Badge>
                 )}
 
-                <Badge 
-                  variant="secondary" 
+                <Badge
+                  variant="secondary"
                   className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm"
                 >
                   {wine.category}
@@ -93,10 +93,13 @@ const WineGrid = () => {
 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-wine flex items-center justify-center gap-2">
-                  <Button variant="elegant" size="sm" className="bg-white/90 text-primary">
+                  <Button variant="elegant" size="sm" className="bg-white/90 text-[#9a3324]">
                     <Eye className="h-4 w-4" />
                   </Button>
-                  <Button variant="wine" size="sm">
+                  <Button 
+                    size="sm"
+                    className="bg-[#9a3324] hover:bg-[#7a2a1d] text-white"
+                  >
                     <ShoppingCart className="h-4 w-4" />
                   </Button>
                 </div>
@@ -104,7 +107,7 @@ const WineGrid = () => {
 
               <CardContent className="p-6">
                 <div className="mb-2">
-                  <h3 className="font-semibold text-card-foreground mb-1 group-hover:text-primary transition-wine">
+                  <h3 className="font-semibold text-card-foreground mb-1 group-hover:text-[#9a3324] transition-wine">
                     {wine.name}
                   </h3>
                   <p className="text-sm text-muted-foreground">
@@ -112,13 +115,13 @@ const WineGrid = () => {
                   </p>
                 </div>
 
-                <p className="wine-text text-sm mb-4 line-clamp-2">
+                <p className="text-sm mb-4 line-clamp-2 text-gray-700">
                   {wine.description}
                 </p>
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="font-bold text-primary text-lg">
+                    <span className="font-bold text-[#9a3324] text-lg">
                       {wine.price}
                     </span>
                     {wine.originalPrice && (
@@ -129,9 +132,8 @@ const WineGrid = () => {
                   </div>
                 </div>
 
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground transition-wine"
+                <Button
+                  className="w-full mt-4 bg-[#9a3324] hover:bg-[#7a2a1d] text-white border-transparent hover:border-transparent"
                 >
                   Adicionar ao Carrinho
                 </Button>
@@ -142,7 +144,10 @@ const WineGrid = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Button variant="wine" size="lg" className="px-8">
+          <Button
+            size="lg"
+            className="px-8 bg-[#9a3324] hover:bg-[#7a2a1d] text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02]"
+          >
             Ver Todos os Vinhos
           </Button>
         </div>

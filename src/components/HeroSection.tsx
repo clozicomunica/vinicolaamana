@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${heroImage})`,
@@ -20,36 +20,35 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto lg:mx-0">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 mb-6 bg-background/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium">
-            <span className="gold-accent">Tradição desde 1952</span>
+            <span className="text-white">Tradição desde 1952</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Vinhos Únicos,
             <br />
-            <span className="gold-accent">Experiências Inesquecíveis</span>
+            <span className="text-[#9c9c9c]">Experiências Inesquecíveis</span>
           </h1>
 
           {/* Description */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-            Descubra a tradição e excelência da Vinícola Mana. Três gerações dedicadas 
+            Descubra a tradição e excelência da Vinícola Mana. Três gerações dedicadas
             à arte de produzir vinhos que contam a história de nossa terra.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button 
-              variant="wine" 
-              size="lg" 
-              className="group text-lg px-8 py-4 h-auto"
+            <Button
+              size="lg"
+              className="text-lg px-8 py-4 h-auto bg-[#9a3324] hover:bg-[#7a2a1d] text-white shadow-lg transition-all duration-300 group"
             >
               Explore Nossos Vinhos
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
-            <Button 
-              variant="elegant" 
-              size="lg" 
+
+            <Button
+              variant="elegant"
+              size="lg"
               className="group text-lg px-8 py-4 h-auto bg-white/10 text-white border-white/30 hover:bg-white/20"
             >
               <Play className="mr-2 h-5 w-5" />
