@@ -90,7 +90,7 @@ const Vinhos = () => {
             </p>
           </div>
         </section>
-<div className="h-px bg-white/20 w-full"></div>
+       
         {/* Filters and Search */}
         <section className="py-8 border-b border-white/20 bg-black">
           <div className="container mx-auto px-4">
